@@ -1,0 +1,10 @@
+config OPENWITH
+        bool "Openwith xattr support"
+        default n
+        help
+          Enables file access control with the user.openwith extended
+          attribute. This attribute contains a list of executable file
+          names, separated by spaces, that are allowed to open the
+          file. Executable file names can be full paths. If the
+          extended airbutt is not installed on the file, then the
+          system behavior is default.
